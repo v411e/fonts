@@ -53,7 +53,7 @@
           src = pkgs.fetchzip {
             url =
               "https://www.wfonts.com/download/data/2016/07/08/lucida-sans/lucida-sans.zip";
-            sha256 = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
+            sha256 = "sha256-jsYSYLzeF2bGEp5DDWV3Vbd9i38RwmHQMOl2Mag3+/0=";
             stripRoot = false;
           };
           installPhase = ''
