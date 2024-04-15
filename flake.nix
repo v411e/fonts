@@ -69,7 +69,7 @@
           src = pkgs.fetchzip {
             url =
               "https://www.wfonts.com/download/data/2015/10/29/lucida-grande/lucida-grande.zip";
-            sha256 = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
+            sha256 = "sha256-j7OAOVrIAWYl/YL5kekscOQEnn2FhZIORLMaaB0ru+c=";
             stripRoot = false;
           };
           installPhase = ''
