@@ -46,5 +46,37 @@
           '';
           meta = { description = "The Palatino Font Family derivation."; };
         };
+
+        packages.lucida-sans = pkgs.stdenvNoCC.mkDerivation {
+          name = "lucida-sans-font";
+          dontConfigue = true;
+          src = pkgs.fetchzip {
+            url =
+              "https://www.wfonts.com/download/data/2016/07/08/lucida-sans/lucida-sans.zip";
+            sha256 = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
+            stripRoot = false;
+          };
+          installPhase = ''
+            mkdir -p $out/share/fonts
+            cp -R $src $out/share/fonts/truetype/
+          '';
+          meta = { description = "The Lucida Sans Font Family derivation."; };
+        };
+
+        packages.lucida-grande = pkgs.stdenvNoCC.mkDerivation {
+          name = "lucida-grande-font";
+          dontConfigue = true;
+          src = pkgs.fetchzip {
+            url =
+              "https://www.wfonts.com/download/data/2015/10/29/lucida-grande/lucida-grande.zip";
+            sha256 = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
+            stripRoot = false;
+          };
+          installPhase = ''
+            mkdir -p $out/share/fonts
+            cp -R $src $out/share/fonts/truetype/
+          '';
+          meta = { description = "The Lucida Grande Font Family derivation."; };
+        };
       });
 }
